@@ -1,0 +1,35 @@
+.pc-options-container {
+  display: none;
+}
+
+.mobile-options-hidden {
+  display: none;
+}
+
+.mobile-options-active {
+  display: block;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.main-menu {
+
+}
+
+@media screen and (min-width: 699px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .pc-options-container {
+    display: block;
+  }
+
+  .mobile-options-active {
+    display: none;
+  }
+}

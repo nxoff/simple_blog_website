@@ -1,0 +1,23 @@
+:root {
+  /* FOR DARK THEME */
+  --dark-theme-bg-color: #0b0b0b;
+  --dark-theme-main-text-color: white;
+  /* FOR LIGHT THEME */
+  --light-theme-bg-color: #ffffff;
+  --light-theme-main-text-color: #121212;
+}
+
+body {
+  background-color: var(--dark-theme-bg-color);
+  color: var(--dark-theme-main-text-color)
+}
+
+.menu-container {
+  height: 50px;
+  text-align: center;
+}
+
+.user-profile-icon-wrapper {
+  position: absolute;
+  left: 10px;
+}
