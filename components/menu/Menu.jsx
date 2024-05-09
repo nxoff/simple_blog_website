@@ -1,9 +1,12 @@
 'use client'
-
 import Image from "next/image"
 import Link from "next/link"
 
-import '../styles/menu.css'
+import '../../styles/menu.css'
+
+import MobileContent from "./MobileContent"
+import RegularContent from "./RegularContent"
+
 import { useState } from "react"
 
 const Menu = () => {
@@ -32,25 +35,17 @@ const Menu = () => {
   }
 
   return (
-    <div className="main-menu">
-      <div className="pc-options-container">
-        <span>option 1</span>
-        <span>option 2</span>
-        <span>option 3</span>
-      </div>
-      <div id='mobile-options-parent' className={styleState}>
-        <Image src={'/logo.png'} width={200} height={150} alt="logo" />
-        <Link href={'/'}>Najnowsze Posty!</Link>
-        <Link href={'/'}>Szukaj Artykułów</Link>
-        <Link href={'/'}>Twój Profil</Link>
-      </div>
+    <header className="main-menu">
+      <RegularContent />
+      <MobileContent styleState={styleState} />
       <Image
-      onClick={hamburgerMenu}
-      className={'menu-icon' + menuIcon}
-      src={'/hamburger-menu'+ menuIcon +'.svg'}
-      width={35} height={35}
-      alt="menu" />
-    </div>
+        onClick={hamburgerMenu}
+        className={'menu-icon' + menuIcon}
+        src={'/hamburger-menu'+ menuIcon +'.svg'}
+        width={35} height={35}
+        alt="menu"
+      />
+    </header>
   )
 }
 

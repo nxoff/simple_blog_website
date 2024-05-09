@@ -4,7 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 import { ClerkProvider, SignedIn, UserButton } from '@clerk/nextjs'
-import Menu from '@/components/Menu'
+
+import Menu from '@/components/menu/Menu'
 
 export const metadata = {
   title: 'Blog Page',
