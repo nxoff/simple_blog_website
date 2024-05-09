@@ -17,11 +17,16 @@ body {
 }
 
 .menu-container {
-  height: 50px;
+  height: 100px;
   text-align: center;
 }
 
 .user-profile-icon-wrapper {
   position: absolute;
   left: 10px;
+}
+
+.error {
+  font-size: 22px;
+  color: red;
 }
