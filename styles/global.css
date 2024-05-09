@@ -3,8 +3,10 @@
   /* FOR DARK THEME */
   --dark-theme-bg-color: #141414;
   --dark-theme-main-text-color: white;
+  --dark-theme-second-text-color: black;
   --dark-theme-hamburger-menu-bg-color: white;
   --dark-theme-hamburger-menu-text-color: black;
+  --dark-theme-footer-bg-color: white;
   /* FOR LIGHT THEME */
   --light-theme-bg-color: #ffffff;
   --light-theme-main-text-color: #121212;

@@ -36,6 +36,8 @@
   right: 0;
   background-color: var(--dark-theme-hamburger-menu-bg-color);
   color: var(--dark-theme-hamburger-menu-text-color);
+
+  z-index: 2;
 }
 
 .hamburger-menu-content-container {

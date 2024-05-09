@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--dark-theme-footer-bg-color);
+  color: var(--dark-theme-second-text-color);
+}
+
+footer h3 {
+  font-size: 19px;
+  font-weight: 500;
+}
