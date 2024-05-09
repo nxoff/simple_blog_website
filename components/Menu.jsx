@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image"
+import Link from "next/link"
 
 import '../styles/menu.css'
 import { useState } from "react"
@@ -37,14 +38,15 @@ const Menu = () => {
         <span>option 2</span>
         <span>option 3</span>
       </div>
-      <div className={styleState}>
-        <span>option 1</span>
-        <span>option 2</span>
-        <span>option 3</span>
+      <div id='mobile-options-parent' className={styleState}>
+        <Image src={'/logo.png'} width={200} height={150} alt="logo" />
+        <Link href={'/'}>Najnowsze Posty!</Link>
+        <Link href={'/'}>Szukaj Artykułów</Link>
+        <Link href={'/'}>Twój Profil</Link>
       </div>
       <Image
       onClick={hamburgerMenu}
-      className="menu-icon"
+      className={'menu-icon' + menuIcon}
       src={'/hamburger-menu'+ menuIcon +'.svg'}
       width={35} height={35}
       alt="menu" />
