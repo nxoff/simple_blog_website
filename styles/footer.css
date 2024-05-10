@@ -7,8 +7,7 @@ footer {
 
   width: 100vw;
   height: 200px;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   background-color: var(--dark-theme-footer-bg-color);
   color: var(--dark-theme-second-text-color);
 }

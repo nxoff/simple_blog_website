@@ -25,10 +25,25 @@ h1 {
   padding: 25px;
   box-shadow: 10px 10px 1px rgb(255, 255, 255, 0.2);
   border-radius: 20px;
+
+  transition: 100ms;
+}
+
+.blog-box:hover {
+  transform: translate(-5px, -5px);
 }
 
 .home-bottom-content {
   margin-top: 50px;
+}
+
+@keyframes blog-box-anim {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
 }
 
 @media screen and (max-width: 1124px) {

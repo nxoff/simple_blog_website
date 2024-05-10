@@ -21,10 +21,12 @@ const RootLayout = ({ children }) => {
           <header className='menu-container'>
             <div className='user-profile-icon-wrapper'>
               <SignedIn>
-                <UserButton />
+                <UserButton userProfileUrl='/profile'  />
               </SignedIn>
             </div>
-            <Menu/>
+            <div className='content-menu-wrapper'>
+              <Menu/>
+            </div>
           </header>
           <main className='app'> {children} </main>
           <Footer/>

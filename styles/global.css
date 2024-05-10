@@ -13,6 +13,7 @@
 }
 
 body {
+  height: 125vh;
   margin: var(--body-margin);
   background-color: var(--dark-theme-bg-color);
   color: var(--dark-theme-main-text-color)
@@ -20,12 +21,21 @@ body {
 
 .menu-container {
   height: 100px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .user-profile-icon-wrapper {
-  position: absolute;
-  left: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.content-menu-wrapper {
+  background-color: white;
+  border-bottom-left-radius: 30px;
 }
 
 .error {
