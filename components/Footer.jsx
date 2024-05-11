@@ -4,28 +4,26 @@ import { useEffect, useState } from 'react'
 import '../styles/footer.css'
 
 import Image from 'next/image'
+import { edgeServerPages } from 'next/dist/build/webpack/plugins/pages-manifest-plugin'
 
 const Footer = () => {
-  const [scrollPosition, setScrollPosition] = useState(-200);
+  const [scrollValue, setScrollValue] = useState(-200);
 
   const handleScroll = () => {
-    const position = window.scrollY - 200;
 
-    if (position > 0)
-      return
+    if (scrollValue > -6) return
 
-    setScrollPosition(position);
-
-    console.log(scrollPosition)
+    let value_reduced = scrollValue + 15
+    setScrollValue(value_reduced)
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('wheel', handleScroll);
+    return () => window.removeEventListener('wheel', handleScroll);
   });
 
   return (
-    <footer style={{bottom: scrollPosition}}>
+    <footer style={{bottom: scrollValue}}>
       <h3>nasze social media</h3>
     </footer>
   )

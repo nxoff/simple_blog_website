@@ -13,10 +13,12 @@
 }
 
 body {
-  height: 125vh;
+  /* height: 100vh; */
   margin: var(--body-margin);
   background-color: var(--dark-theme-bg-color);
-  color: var(--dark-theme-main-text-color)
+  color: var(--dark-theme-main-text-color);
+
+  overflow-y: visible;
 }
 
 .menu-container {
