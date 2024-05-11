@@ -44,3 +44,9 @@ body {
   font-size: 22px;
   color: red;
 }
+
+@media screen and (max-width: 684px) {
+  .content-menu-wrapper {
+    background: none;
+  }
+}

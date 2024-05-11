@@ -4,17 +4,23 @@ import { useEffect, useState } from 'react'
 import '../styles/footer.css'
 
 import Image from 'next/image'
-import { edgeServerPages } from 'next/dist/build/webpack/plugins/pages-manifest-plugin'
 
 const Footer = () => {
   const [scrollValue, setScrollValue] = useState(-200);
 
-  const handleScroll = () => {
+  const handleScroll = (e) => {
+    let delta = e.deltaY
+    let value_update
 
-    if (scrollValue > -6) return
+    if (delta > 0 && scrollValue < -5) {
+      value_update = scrollValue + 15
+      setScrollValue(value_update)
+    }
 
-    let value_reduced = scrollValue + 15
-    setScrollValue(value_reduced)
+    if (delta < 0 && scrollValue > -200) {
+      value_update = scrollValue - 15
+      setScrollValue(value_update)
+    }
   }
 
   useEffect(() => {
